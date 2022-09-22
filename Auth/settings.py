@@ -42,6 +42,9 @@ INSTALLED_APPS = [
     'crispy_bootstrap5',
     'django_browser_reload',
     'django_filters',
+    "whitenoise.runserver_nostatic",
+    "django.contrib.staticfiles",
+
     
     
     
@@ -136,6 +139,8 @@ USE_TZ = False
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
+DISABLE_COLLECTSTATIC=1
+STATIC_ROOT = BASE_DIR / "staticfiles"
 STATIC_ROOT =  os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [

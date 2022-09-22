@@ -1,5 +1,4 @@
 from asyncore import write
-from curses.ascii import HT
 from email import message
 from django.contrib.sessions.models import Session
 from multiprocessing import context

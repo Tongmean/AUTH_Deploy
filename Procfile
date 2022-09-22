@@ -1,1 +1,1 @@
-web: gunicorn AUTH.wsgi
+web: gunicorn AUTH.wsgi --log-file -
